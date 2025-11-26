@@ -17,11 +17,11 @@ from utils import model_performance, model_performance_val
 
 def _latest_result_dir(prefix):
 
-    dirs = [d for d in os.listdir("repo/results") if d.startswith(prefix)]
+    dirs = [d for d in os.listdir("results") if d.startswith(prefix)]
     if not dirs:
         raise RuntimeError(f"No directories found with prefix {prefix}")
     dirs.sort()
-    return os.path.join("repo/results", dirs[-1])
+    return os.path.join("results", dirs[-1])
 
 
 def run_all(
@@ -35,7 +35,7 @@ def run_all(
     n_agents=52,
     nproc_group=None,
     nproc_ind=None,
-    data_path="repo/data/calibrate.csv"
+    data_path="data/calibrate.csv"
 ):
 
     print("\n--- Starting full reproducibility pipeline ---\n")

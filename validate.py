@@ -112,7 +112,7 @@ def run(
     best_bias = get_best_bias(group_df, metric)
 
     ts = strftime("%y%m%d_%H%M%S")
-    outdir = f"repo/results/val_{ts}"
+    outdir = f"results/val_{ts}"
     os.makedirs(outdir, exist_ok=True)
 
     g = fit_group(df, best_bias, lr, steps, reps)
@@ -125,4 +125,4 @@ def run(
 
 
 if __name__ == "__main__":
-    run(cal_dir="repo/results/cal_251125_163653")
+    run(cal_dir="results/cal_251125_163653")

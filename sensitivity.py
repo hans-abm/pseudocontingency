@@ -204,7 +204,7 @@ def run(
 
     # save
     ts = strftime("%y%m%d_%H%M%S")
-    outdir = f"repo/results/sens_{ts}"
+    outdir = f"results/sens_{ts}"
     os.makedirs(outdir, exist_ok=True)
 
     stab.to_csv(f"{outdir}/sensitivity.csv", index=False)

@@ -333,8 +333,8 @@ def plot_bias_ridge(cal_dir):
 
 
 def run():
-    cal_dir = "repo/results/cal_251125_163653"
-    val_dir = "repo/results/val_251126_092624"
+    cal_dir = "results/cal_251125_163653"
+    val_dir = "results/val_251126_092624"
 
     plot_bias_ridge(cal_dir)
     plot_calibration_combined(cal_dir)

@@ -114,7 +114,7 @@ def run(
 ):
     df = prep()
     ts = strftime("%y%m%d_%H%M%S")
-    outdir = f"repo/results/cal_{ts}"
+    outdir = f"results/cal_{ts}"
     os.makedirs(outdir, exist_ok=True)
 
     g = fit_group(df, lr, steps, reps, bias_range, n_agents, nproc_group)

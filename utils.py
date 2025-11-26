@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 
-DATA_DIR = "repo\data"
+DATA_DIR = "data"
 
 def load_cal():
     path = os.path.join(DATA_DIR, "calibrate.csv")

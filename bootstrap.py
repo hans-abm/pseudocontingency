@@ -121,7 +121,7 @@ def run(
     steps=24,
     n_agents=52,
     nproc=None,
-    data_path="repo/data/calibrate.csv",
+    data_path="data/calibrate.csv",
 ):
     
    
@@ -134,7 +134,7 @@ def run(
         nproc = cpu_count()
 
     ts = strftime("%y%m%d_%H%M%S")
-    outdir = f"repo/results/boot_{ts}"
+    outdir = f"results/boot_{ts}"
     os.makedirs(outdir, exist_ok=True)
 
     args = [(i, df, bias_range, lr, steps, n_agents) for i in range(n_bootstrap)]
