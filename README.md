@@ -1,6 +1,9 @@
 # Pseudocontingency model 
 This repository contains all code required to reproduce the calibration, validation, sensitivity, and bootstrap analyses reported in the manuscript. A single script (`run_all.py`) executes the entire workflow end‑to‑end.
 
+The paper can be cited as: 
+Kaan, J., Kunz, S., Moore, S., & Khaluf, Y. (2026). Lack of group-to-individual generalizability in pseudocontingencies. Scientific Reports. https://doi.org/10.1038/s41598-026-41585-1
+
 ## 1. Overview
 
 The project models how individuals form beliefs about the relationship between healthiness and tastiness of foods. These beliefs are shaped by biased samples of the environment, producing **pseudocontingency effects**: systematic overestimation or underestimation of statistical relationships based on base rates (pseudocontingencies) rather than actual contingencies.
